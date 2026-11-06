@@ -186,14 +186,14 @@ class BazaarBilling(private val context: Context) {
         val once = Once { cb(null) }
         try {
             p.getSubscriptionSkuDetails(Plan.values().map { it.sku }) {
-                getSkuDetail { list ->
+                getSkuDetailsSucceed { list ->
                     if (once.take()) {
                         cb(list.mapNotNull { d ->
                             Plan.bySku(d.sku)?.let { it to BazaarSku(d.sku, d.title, d.description, d.price) }
                         })
                     }
                 }
-                getSkuDetailFailed { if (once.take()) cb(null) }
+                getSkuDetailsFailed { if (once.take()) cb(null) }
             }
         } catch (e: Exception) {
             if (once.take()) cb(null)
