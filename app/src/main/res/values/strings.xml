@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">انتقال پیامک</string>
+
+    <!-- منو -->
+    <string name="ok">تأیید</string>
+    <string name="cancel">انصراف</string>
+
+    <!-- وضعیت -->
+    <string name="status_title">ارسال خودکار</string>
+    <string name="status_off">غیرفعال</string>
+
+    <!-- شماره مقصد -->
+
+    <!-- فیلترها -->
+    <string name="label_recv_sim">سیم‌کارت دریافت‌کننده</string>
+    <string name="chip_all_sims">هر دو سیم</string>
+    <string name="chip_sim1">سیم ۱</string>
+    <string name="chip_sim2">سیم ۲</string>
+    <string name="label_sender">فرستنده</string>
+    <string name="chip_all_senders">همه</string>
+    <string name="chip_listed_senders">فقط فرستنده‌های مشخص</string>
+    <string name="hint_filter_list">لیست فرستنده‌ها</string>
+    <string name="helper_filter_list">شماره یا نام فرستنده (مثل DigiKala)؛ تایپ کنید تا پیشنهاد بیاید، یا از دکمه‌های زیر انتخاب کنید. با ویرگول یا خط جدید جدا کنید.</string>
+
+    <!-- قالب -->
+    <string name="section_template">قالب پیام</string>
+    <string name="hint_template">متن پیامِ ارسالی</string>
+    <string name="label_vars">درج متغیر</string>
+    <string name="var_sender">فرستنده</string>
+    <string name="var_body">متن پیام</string>
+    <string name="var_sim">سیم</string>
+    <string name="var_time">ساعت</string>
+    <string name="var_date">تاریخ</string>
+    <string name="label_preview">پیش‌نمایش</string>
+    <string name="preview_meta">%1$d نویسه · %2$d پیامک</string>
+    <string name="template_note">متن فارسی در هر بخش پیامک حدود ۷۰ نویسه جا می‌شود و هر بخش هزینه‌ی یک پیامک دارد.</string>
+    <string name="btn_reset_template">بازگشت به پیش‌فرض</string>
+    <string name="btn_test_send">ارسال آزمایشی</string>
+    <string name="test_done">ارسال آزمایشی انجام شد؛ نتیجه در گزارش ثبت می‌شود.</string>
+    <string name="test_body">کد تأیید شما: 482913</string>
+    <string name="test_sender">10008888</string>
+
+    <!-- سیم ارسال -->
+    <string name="section_send_sim">ارسال از طریق</string>
+    <string name="chip_send_same">همان سیم دریافت</string>
+
+    <!-- باتری -->
+    <string name="battery_title">پایداری در پس‌زمینه</string>
+    <string name="battery_text">برای اینکه سیستم برنامه را متوقف نکند، آن را از بهینه‌سازی باتری مستثنی کنید. در برخی گوشی‌ها (شیائومی، سامسونگ، هوآوی) باید اجازه‌ی اجرا در پس‌زمینه را هم بدهید.</string>
+    <string name="battery_action">باز کردن تنظیمات</string>
+
+    <!-- گزارش -->
+    <string name="log_title">گزارش ارسال‌ها</string>
+    <string name="log_empty">هنوز پیامی منتقل نشده است.</string>
+    <string name="log_last">آخرین: %1$s · %2$s</string>
+    <string name="log_clear">پاک کردن گزارش</string>
+    <string name="log_clear_confirm">همه‌ی موارد گزارش پاک شود؟</string>
+    <string name="log_test">ارسال آزمایشی</string>
+    <string name="log_privacy_note">برای حفظ حریم خصوصی، متن پیام‌ها در گزارش ذخیره نمی‌شود.</string>
+    <string name="sim_unknown">نامشخص</string>
+
+    <string name="err_generic">خطای عمومی در ارسال</string>
+    <string name="err_radio_off">آنتن خاموش است (حالت پرواز؟)</string>
+    <string name="err_null_pdu">پیام نامعتبر است</string>
+    <string name="err_no_service">سیم‌کارت آنتن ندارد</string>
+    <string name="err_code">خطا با کد %1$d</string>
+
+
+    <!-- دسترسی‌ها -->
+    <string name="perm_denied">بدون این دسترسی‌ها ارسال خودکار ممکن نیست.</string>
+    <string name="perm_settings_title">دسترسی داده نشد</string>
+    <string name="perm_settings_msg">برای فعال‌سازی، دسترسی «پیامک» را از تنظیمات برنامه روشن کنید.</string>
+    <string name="open_settings">باز کردن تنظیمات</string>
+    <string name="perm_revoked">دسترسی‌ها لغو شده بود؛ ارسال خودکار غیرفعال شد.</string>
+
+    <!-- انتخاب از مخاطبین و پیامک‌ها -->
+    <string name="btn_pick_contacts">از مخاطبین</string>
+    <string name="btn_pick_sms">از پیامک‌ها</string>
+    <string name="picker_title_target">انتخاب شماره‌ی مقصد</string>
+    <string name="picker_title_filter">انتخاب فرستنده‌ها</string>
+    <string name="picker_search">جستجو یا تایپ دستی</string>
+    <string name="tab_contacts">مخاطبین</string>
+    <string name="tab_sms">پیامک‌ها</string>
+    <string name="picker_loading">در حال بارگذاری…</string>
+    <string name="picker_empty_contacts">مخاطبی پیدا نشد.</string>
+    <string name="picker_empty_sms">فرستنده‌ای در صندوق پیامک پیدا نشد.</string>
+    <string name="picker_no_match">موردی پیدا نشد. می‌توانید خودتان تایپ و اضافه کنید.</string>
+    <string name="picker_perm_needed">برای نمایش این فهرست دسترسی لازم است. برای تلاش دوباره همین‌جا را لمس کنید.</string>
+    <string name="picker_add_manual">افزودن «%1$s»</string>
+    <string name="picker_use_manual">استفاده از «%1$s»</string>
+    <string name="picker_manual_sub">ورود دستی</string>
+    <string name="picker_done_count">تأیید (%1$d)</string>
+
+    <string name="perm_contacts_title">دسترسی به مخاطبین</string>
+    <string name="perm_contacts_message">برای اینکه بتوانید شماره را از مخاطبین انتخاب کنید و هنگام تایپ پیشنهاد ببینید، برنامه نام و شماره‌ی مخاطبین را می‌خواند.\n\nاین اطلاعات فقط روی صفحه نمایش داده می‌شود؛ ذخیره یا ارسال نمی‌شود.</string>
+    <string name="perm_sms_title">دسترسی به صندوق پیامک</string>
+    <string name="perm_sms_message">برای اینکه بتوانید فرستنده‌ها (مثل DigiKala یا شماره‌های بانک) را از پیامک‌های قبلی انتخاب کنید، برنامه فقط نام یا شماره‌ی فرستنده‌ی پیامک‌های صندوق ورودی را می‌خواند.\n\nمتن پیامک‌ها خوانده و ذخیره نمی‌شود، و چیزی از گوشی خارج نمی‌شود.</string>
+    <string name="perm_denied_optional">دسترسی داده نشد؛ همچنان می‌توانید دستی تایپ کنید.</string>
+    <string name="perm_optional_settings_msg">برای استفاده از این امکان، دسترسی را از تنظیمات برنامه روشن کنید. بدون آن همچنان می‌توانید دستی تایپ کنید.</string>
+
+    <!-- حریم خصوصی / درباره -->
+    <string name="privacy_title">حریم خصوصی</string>
+    <string name="privacy_text">«انتقال پیامک» پیامک‌های دریافتی گوشی شما را، طبق تنظیماتی که خودتان تعیین می‌کنید، به یک شماره‌ی دلخواه پیامک می‌کند.\n\nچه داده‌ای پردازش می‌شود؟\nمتن و شماره‌ی فرستنده‌ی پیامک‌های دریافتی فقط در لحظه‌ی دریافت و فقط برای ساختن پیامِ ارسالی استفاده می‌شود.\n\nچه چیزی ذخیره می‌شود؟\nفقط تنظیمات برنامه، گزارش ارسال‌ها (فرستنده، زمان و وضعیت) و اطلاعات اشتراک (طرح، تاریخ خرید و شماره‌ی سفارش بازار) روی خود گوشی. متن پیامک‌ها هیچ‌جا ذخیره نمی‌شود.\n\nآیا داده‌ای از گوشی خارج می‌شود؟\nاینترنت فقط برای بررسی نسخه‌ی جدید برنامه (خواندن یک فایل کوچک) و بررسی اشتراک از طریق کافه‌بازار استفاده می‌شود؛ هیچ اطلاعاتی از گوشی یا پیامک‌های شما به سرور ما ارسال نمی‌شود. ابزار تبلیغاتی یا آماری هم وجود ندارد. تنها مقصد پیامک‌ها، شماره‌ای است که خودتان وارد می‌کنید.\n\nمخاطبین و فرستنده‌های پیامک\nاگر از «انتخاب از مخاطبین» یا «از پیامک‌ها» استفاده کنید، برنامه فقط برای نمایش فهرست و پیشنهاد، نام و شماره‌ی مخاطبین و نام/شماره‌ی فرستنده‌ی پیامک‌های صندوق را می‌خواند. متن پیامک‌های صندوق خوانده نمی‌شود و این فهرست‌ها ذخیره نمی‌شوند. این دسترسی‌ها اختیاری‌اند.\n\nمسئولیت شما\nپیامک‌ها ممکن است شامل کد تأیید یا اطلاعات حساس باشند. فقط به شماره‌ای منتقل کنید که به آن اطمینان دارید و فقط روی سیم‌کارت و گوشی خودتان استفاده کنید. هزینه‌ی ارسال طبق تعرفه‌ی اپراتور شما محاسبه می‌شود.\n\nحذف اطلاعات\nبا حذف برنامه یا پاک‌کردن داده‌های آن، همه‌ی اطلاعات برنامه از بین می‌رود.</string>
+
+    <!-- منو و تنظیمات -->
+    <string name="menu_privacy">حریم خصوصی</string>
+    <string name="menu_about">درباره برنامه</string>
+    <string name="settings_title">تنظیمات</string>
+    <string name="section_theme">حالت نمایش</string>
+    <string name="theme_hint">در حالت خودکار، از ۶ صبح تا ۷ عصر تم روشن و بقیه‌ی ساعت‌ها تاریک است. می‌توانید دستی هم انتخاب کنید.</string>
+    <string name="theme_auto">خودکار</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تاریک</string>
+    <string name="battery_ok">بهینه‌سازی باتری برای برنامه خاموش است.</string>
+    <string name="battery_not_ok">بهینه‌سازی باتری روشن است؛ ممکن است سیستم برنامه را متوقف کند.</string>
+    <string name="log_row_hint">نتیجه‌ی ارسال‌ها و خطاهای ارسال</string>
+
+    <!-- وضعیت کلی -->
+    <string name="status_on">فعال · %1$s قانون فعال</string>
+    <string name="status_no_active">فعال · هیچ قانون فعالی وجود ندارد</string>
+    <string name="section_rules">قانون‌های انتقال</string>
+    <string name="rules_empty">هنوز قانونی نساخته‌اید. هر قانون مشخص می‌کند پیامک چه فرستنده‌هایی به چه شماره‌هایی منتقل شود.</string>
+    <string name="rules_master_off_hint">ارسال خودکار خاموش است. برای دیدن و مدیریت قانون‌ها آن را روشن کنید.</string>
+    <string name="rule_add">افزودن قانون جدید</string>
+    <string name="rule_default_name">قانون %1$d</string>
+    <string name="sum_all_senders">همه‌ی فرستنده‌ها</string>
+    <string name="sum_n_senders">%1$s فرستنده‌ی مشخص</string>
+    <string name="sum_from">از: %1$s</string>
+    <string name="sum_to">به (%1$s): %2$s</string>
+    <string name="sum_more"> و %1$s شماره‌ی دیگر</string>
+    <string name="sum_sims">دریافت: %1$s · ارسال: %2$s</string>
+
+    <!-- ویرایش قانون -->
+    <string name="rule_new">قانون جدید</string>
+    <string name="rule_edit">ویرایش قانون</string>
+    <string name="rule_delete">حذف قانون</string>
+    <string name="rule_delete_confirm">این قانون حذف شود؟</string>
+    <string name="rule_saved">ذخیره شد</string>
+    <string name="btn_save">ذخیره</string>
+    <string name="section_info">۱. مشخصات قانون</string>
+    <string name="hint_rule_name">نام قانون (اختیاری)</string>
+    <string name="rule_enabled_title">قانون فعال باشد</string>
+    <string name="rule_status_on">فعال</string>
+    <string name="rule_status_off">غیرفعال؛ بخش‌های زیر خاموش‌اند</string>
+    <string name="section_which">۲. کدام پیامک‌ها؟</string>
+    <string name="section_targets">۳. به چه کسانی ارسال شود؟</string>
+    <string name="hint_targets">شماره‌های مقصد</string>
+    <string name="helper_targets">یک یا چند شماره را با ویرگول یا خط جدید جدا کنید. تایپ کنید تا پیشنهاد بیاید، یا از دکمه‌ی زیر چند مخاطب انتخاب کنید.</string>
+    <string name="unsaved_title">تغییرات ذخیره نشده</string>
+    <string name="unsaved_msg">تغییرات شما ذخیره نشده است. خارج می‌شوید؟</string>
+    <string name="unsaved_discard">خروج بدون ذخیره</string>
+    <string name="unsaved_keep">ادامه ویرایش</string>
+
+    <!-- خطاها -->
+    <string name="error_title">خطا</string>
+    <string name="err_in_section">[%1$s] %2$s</string>
+    <string name="err_senders_empty">«فقط فرستنده‌های مشخص» انتخاب شده ولی لیست فرستنده‌ها خالی است. فرستنده اضافه کنید یا «همه» را انتخاب کنید.</string>
+    <string name="err_targets_empty">حداقل یک شماره‌ی مقصد وارد کنید.</string>
+    <string name="err_target_invalid">شماره‌ی «%1$s» نامعتبر است؛ باید ۳ تا ۱۵ رقم باشد (با + اختیاری در ابتدا) و نباید حرف داشته باشد.</string>
+    <string name="err_target_dup">شماره‌ی «%1$s» تکراری است.</string>
+    <string name="err_target_is_sender">شماره‌ی «%1$s» هم در فرستنده‌ها و هم در مقصدها است؛ پیام مقصد هرگز دوباره به خودش ارسال نمی‌شود.</string>
+    <string name="err_template_empty">قالب پیام خالی است.</string>
+    <string name="err_template_no_body">قالب باید حتماً شامل {body} (متن پیام) باشد.</string>
+    <string name="err_template_unknown">متغیر ناشناخته‌ی %1$s در قالب. متغیرهای مجاز: {sender} {body} {sim} {time} {date}</string>
+    <string name="err_no_rules">هیچ قانونی تعریف نشده است. ابتدا یک قانون بسازید.</string>
+    <string name="err_no_active_rule">همه‌ی قانون‌ها غیرفعال‌اند. حداقل یک قانون را فعال کنید.</string>
+    <string name="err_save_failed">ذخیره‌سازی روی حافظه‌ی گوشی انجام نشد. دوباره تلاش کنید.</string>
+    <string name="err_unexpected">خطای غیرمنتظره: %1$s</string>
+    <string name="err_test_failed">ارسال آزمایشی به هیچ مقصدی آغاز نشد. جزئیات در «گزارش ارسال‌ها» است.</string>
+    <string name="err_render">ساخت متن پیام ناموفق بود: %1$s</string>
+
+    <!-- گزارش -->
+    <string name="log_sent_to">ارسال شد به %1$s · %2$s</string>
+    <string name="log_fail_to">%1$s · به %2$s · %3$s</string>
+    <string name="menu_label">منو</string>
+    <string name="menu_settings_hint">حالت نمایش و پایداری در پس‌زمینه</string>
+    <string name="menu_privacy_hint">برنامه چه داده‌ای را پردازش می‌کند</string>
+    <string name="menu_about_hint">نسخه و اطلاعات برنامه</string>
+
+    <!-- روشن/خاموش‌شدن خودکار -->
+    <string name="auto_off_no_rules">هیچ قانونی نمانده؛ ارسال خودکار خاموش شد.</string>
+    <string name="rules_more">نمایش قانون‌های بیشتر (%1$s)</string>
+    <string name="rule_status_master_off">ارسال خودکار خاموش است؛ همه‌ی قانون‌ها غیرفعال‌اند</string>
+    <string name="err_first_rule_enabled">برای روشن‌شدن ارسال خودکار، این قانون باید فعال باشد. کلید «قانون فعال باشد» را روشن کنید.</string>
+
+    <!-- دسترسی‌های ابتدای برنامه -->
+    <string name="splash_credit">طراحی شده توسط Mr.PC</string>
+
+    <!-- بروزرسانی اجباری -->
+    <string name="upd_title">بروزرسانی ضروری</string>
+    <string name="upd_subtitle">این نسخه دیگر پشتیبانی نمی‌شود و تا نصب نسخه‌ی جدید کار نمی‌کند.</string>
+    <string name="upd_ver_old">نسخه‌ی شما: %1$s</string>
+    <string name="upd_ver_new">نسخه‌ی جدید: %1$s</string>
+    <string name="upd_why">چرا باید بروزرسانی کنید؟</string>
+    <string name="upd_changes">در نسخه‌ی جدید چه چیزهایی اضافه یا درست شده؟</string>
+    <string name="upd_default_reason">برای ادامه‌ی کار، پایداری و امنیت برنامه باید نسخه‌ی جدید را نصب کنید.</string>
+    <string name="upd_note">تا زمانی که برنامه را بروزرسانی نکنید، ارسال خودکار و همه‌ی قانون‌ها غیرفعال می‌مانند. بعد از بروزرسانی، ارسال خودکار را دوباره روشن کنید.</string>
+    <string name="upd_no_link">لینک دریافت نسخه‌ی جدید مشخص نشده است. برنامه را از همان فروشگاه یا منبعی که نصب کرده‌اید بروزرسانی کنید.</string>
+    <string name="upd_button">دریافت نسخه‌ی جدید</string>
+    <string name="upd_exit">خروج از برنامه</string>
+    <string name="upd_no_browser">برنامه‌ای برای باز کردن لینک پیدا نشد.</string>
+    <string name="upd_online_title">اتصال به اینترنت لازم است</string>
+    <string name="upd_online_msg">مدت زیادی از آخرین بررسی نسخه‌ی برنامه گذشته است.</string>
+    <string name="upd_online_note">برای ادامه، گوشی را به اینترنت وصل کنید و «تلاش دوباره» را بزنید. اینترنت فقط برای بررسی نسخه استفاده می‌شود.</string>
+    <string name="upd_retry">تلاش دوباره</string>
+    <string name="upd_checking">در حال بررسی…</string>
+    <string name="upd_still_offline">هنوز اتصال برقرار نشد.</string>
+
+    <!-- اعلان‌ها -->
+    <string name="ch_disabled">غیرفعال‌شدن برنامه</string>
+    <string name="ch_news">تازه‌های نسخه‌ی جدید</string>
+    <string name="notif_disabled_title">ارسال خودکار غیرفعال شد</string>
+    <string name="notif_disabled_text">نسخه‌ی %1$s منتشر شده و این نسخه دیگر کار نمی‌کند.</string>
+    <string name="notif_disabled_big">نسخه‌ی جدید %1$s منتشر شده است و نسخه‌ی فعلی دیگر کار نمی‌کند؛ به همین دلیل ارسال خودکار و همه‌ی قانون‌ها غیرفعال شدند.\n\nدلیل بروزرسانی: %2$s\n\nبرای فعال‌سازی دوباره، برنامه را بروزرسانی کنید.</string>
+    <string name="notif_news_title">در نسخه‌ی %1$s چه چیزهایی اضافه شده؟</string>
+    <string name="notif_news_empty">برای دیدن جزئیات نسخه‌ی جدید، اعلان را لمس کنید.</string>
+
+
+    <string name="ch_license">وضعیت اشتراک</string>
+
+    <!-- ================= نسخه‌ی رایگان و اشتراک ================= -->
+    <string name="badge_premium">ویژه</string>
+    <string name="free_note">شما از نسخه‌ی رایگان استفاده می‌کنید. بخش‌هایی که نشان «ویژه» دارند فقط با اشتراک باز می‌شوند؛ لمسشان کنید تا ببینید چه چیزی اضافه می‌شود.</string>
+    <string name="hint_rule_name_auto">نام قانون (خودکار در نسخه‌ی رایگان)</string>
+    <string name="helper_targets_free">در نسخه‌ی رایگان فقط یک شماره‌ی مقصد، با تایپ دستی. چند مقصد و انتخاب از مخاطبین ویژه است.</string>
+    <string name="err_targets_free_one">در نسخه‌ی رایگان فقط یک شماره‌ی مقصد مجاز است. برای چند مقصد اشتراک تهیه کنید.</string>
+
+    <!-- طرح‌ها -->
+    <string name="plan_monthly">اشتراک ماهانه</string>
+    <string name="plan_yearly">اشتراک سالانه</string>
+    <string name="plan_monthly_duration">۳۰ روز</string>
+    <string name="plan_yearly_duration">۳۶۵ روز</string>
+    <string name="plan_monthly_sub">ماهی یک‌بار تمدید می‌شود</string>
+    <string name="plan_per_month">ماهی فقط %1$s تومان</string>
+    <string name="plan_badge_best">بهترین قیمت · %1$s٪ صرفه‌جویی</string>
+    <string name="plan_pill_free">نسخه‌ی رایگان</string>
+    <string name="plan_pill_active">%1$s · %2$s روز مانده</string>
+    <string name="plan_pill_active_simple">اشتراک فعال</string>
+
+    <!-- امکانات ویژه -->
+    <string name="feat_rules_title">قانون‌های نامحدود</string>
+    <string name="feat_rules_desc">هر چند قانون انتقال که لازم دارید بسازید؛ مثلاً یکی برای بانک و یکی برای فروشگاه.</string>
+    <string name="feat_rules_hint">نسخه‌ی رایگان فقط یک قانون دارد. برای قانون دوم و بیشتر اشتراک لازم است.</string>
+    <string name="feat_simrecv_title">انتخاب سیم‌کارت دریافت</string>
+    <string name="feat_simrecv_desc">مشخص کنید پیامک‌های سیم ۱، سیم ۲ یا هر دو منتقل شوند.</string>
+    <string name="feat_simrecv_hint">نسخه‌ی رایگان فقط پیامک‌های سیم ۱ را منتقل می‌کند.</string>
+    <string name="feat_simsend_title">انتخاب سیم‌کارت ارسال</string>
+    <string name="feat_simsend_desc">پیامک را از هر سیمی که می‌خواهید بفرستید، نه فقط از همان سیمِ دریافت.</string>
+    <string name="feat_simsend_hint">نسخه‌ی رایگان فقط از همان سیمی که پیامک را گرفته ارسال می‌کند.</string>
+    <string name="feat_senders_title">فقط فرستنده‌های مشخص</string>
+    <string name="feat_senders_desc">فقط پیامک بانک یا یک شماره‌ی خاص را منتقل کنید و بقیه را نادیده بگیرید.</string>
+    <string name="feat_senders_hint">نسخه‌ی رایگان همه‌ی پیامک‌ها را منتقل می‌کند. فیلتر فرستنده ویژه است.</string>
+    <string name="feat_targets_title">چند مقصد و انتخاب از مخاطبین</string>
+    <string name="feat_targets_desc">پیامک را هم‌زمان به چند نفر بفرستید و شماره‌ها را راحت از مخاطبین بردارید.</string>
+    <string name="feat_targets_hint">نسخه‌ی رایگان فقط یک شماره‌ی تایپی دارد.</string>
+    <string name="feat_template_title">قالب پیام دلخواه</string>
+    <string name="feat_template_desc">متن پیام ارسالی را خودتان بنویسید و فرستنده، ساعت و تاریخ را در آن بگذارید.</string>
+    <string name="feat_template_hint">نسخه‌ی رایگان قالب پیش‌فرض را دارد. قالب دلخواه ویژه است.</string>
+    <string name="feat_edit_title">ویرایش و نام‌گذاری قانون</string>
+    <string name="feat_edit_desc">قانون ساخته‌شده را هر وقت خواستید تغییر دهید و برایش اسم بگذارید. (حذف همیشه رایگان است.)</string>
+    <string name="feat_edit_hint">در نسخه‌ی رایگان قانون فقط ساخته و حذف می‌شود. ویرایش و نام‌گذاری ویژه است.</string>
+    <string name="feat_toggle_title">روشن و خاموش‌کردن قانون</string>
+    <string name="feat_toggle_desc">هر قانون را موقتاً خاموش کنید، بدون اینکه حذفش کنید.</string>
+    <string name="feat_toggle_hint">در نسخه‌ی رایگان قانون همیشه روشن است. خاموش‌کردن تک‌تک قانون‌ها ویژه است.</string>
+    <string name="feat_log_title">گزارش ارسال‌ها</string>
+    <string name="feat_log_desc">همه‌ی پیامک‌های منتقل‌شده با جستجو، فیلتر و صفحه‌بندی، تا بدانید چه شد.</string>
+    <string name="feat_log_hint">گزارش ارسال‌ها ویژه‌ی کاربران دارای اشتراک است.</string>
+
+    <!-- پنجره‌ی خرید -->
+    <string name="prem_title">با اشتراک، همه‌ی امکانات باز می‌شود</string>
+    <string name="prem_subtitle_generic">این‌ها چیزهای خوبی است که با اشتراک به برنامه اضافه می‌شود:</string>
+    <string name="prem_buy">خرید از کافه‌بازار · %1$s</string>
+    <string name="prem_later">فعلاً نه</string>
+    <string name="prem_connecting">در حال اتصال به کافه‌بازار…</string>
+    <string name="prem_success">اشتراک فعال شد. ممنون از حمایت شما!</string>
+    <string name="prem_no_bazaar">برنامه‌ی کافه‌بازار روی گوشی نصب نیست یا به حساب واردِ آن نشده‌اید. آن را نصب و وارد شوید، بعد دوباره تلاش کنید.</string>
+    <string name="prem_failed">خرید انجام نشد. اینترنت و حساب کافه‌بازار را بررسی کنید و دوباره تلاش کنید.</string>
+    <string name="use_sim_recv">سیم دریافت</string>
+    <string name="use_sim_send">سیم ارسال</string>
+    <string name="use_senders">فرستنده‌ی مشخص</string>
+    <string name="use_multi_target">چند مقصد</string>
+    <string name="use_template">قالب دلخواه</string>
+    <string name="use_extra_rule">قانون دوم و بیشتر</string>
+
+    <!-- صفحه‌ی اصلی: دلیل غیرفعال‌بودن قانون -->
+    <string name="buy_title">اشتراک بخرید و همه‌ی امکانات را باز کنید</string>
+    <string name="buy_text">%1$s؛ قانون نامحدود، دو سیم، چند مقصد، قالب دلخواه و گزارش.</string>
+    <string name="buy_button">خرید اشتراک</string>
+    <string name="block_expired">اشتراک تمام شد و این قانون از امکانات ویژه (%1$s) استفاده می‌کرد، پس غیرفعال شد. با خرید اشتراک خودکار دوباره فعال می‌شود.</string>
+    <string name="block_premium_use">این قانون از امکانات ویژه (%1$s) استفاده می‌کند و در نسخه‌ی رایگان اجرا نمی‌شود. اشتراک بخرید تا فعال شود.</string>
+    <string name="block_extra_rule">در نسخه‌ی رایگان فقط یک قانون اجرا می‌شود. برای اجرای این قانون هم اشتراک بخرید.</string>
+    <string name="block_user_off">این قانون خاموش است.</string>
+    <string name="news_title">نسخه‌ی %1$s آماده است</string>
+    <string name="news_text">تازه‌ها:\n%1$s</string>
+    <string name="news_button">بروزرسانی</string>
+
+    <!-- منو -->
+    <string name="menu_sub_mine">اشتراک من</string>
+    <string name="menu_sub_mine_hint">طرح، تاریخ خرید و انقضا، تاریخچه</string>
+    <string name="menu_sub_buy">خرید اشتراک</string>
+    <string name="menu_sub_buy_hint">رایگان هستید؛ امکانات ویژه را باز کنید</string>
+
+    <!-- دسترسی‌ها (هر کدام پنجره‌ی جدا) -->
+    <string name="perm_step">دسترسی %1$s از %2$s</string>
+    <string name="perm_allow">اجازه می‌دهم</string>
+    <string name="perm_later">بعداً</string>
+    <string name="perm_skip">رد کردن</string>
+    <string name="perm_recv_title">دریافت پیامک</string>
+    <string name="perm_recv_msg">تا برنامه بفهمد پیامک جدیدی رسیده و آن را منتقل کند. بدون این دسترسی برنامه کار نمی‌کند.\n\nدر مرحله‌ی بعد، خودِ سیستم از شما اجازه می‌گیرد.</string>
+    <string name="perm_send_title">ارسال پیامک</string>
+    <string name="perm_send_msg">تا برنامه پیامک را به شماره‌ی مقصدی که خودتان تعیین کرده‌اید بفرستد. طبق تعرفه‌ی اپراتور ممکن است هزینه داشته باشد.\n\nدر مرحله‌ی بعد، خودِ سیستم از شما اجازه می‌گیرد.</string>
+    <string name="perm_phone_title">وضعیت تلفن</string>
+    <string name="perm_phone_msg">تا برنامه بتواند سیم ۱ و سیم ۲ را از هم تشخیص دهد و فقط در گوشی دو‌سیمکارت گزینه‌های سیم را نشان دهد. (اختیاری)</string>
+    <string name="perm_notif_title">اعلان‌ها</string>
+    <string name="perm_notif_msg">تا یادآوری پایان اشتراک و خبر نسخه‌های جدید را به شما نشان دهد. (اختیاری)</string>
+
+    <!-- اشتراک من -->
+    <string name="sub_title">اشتراک من</string>
+    <string name="sub_status_premium">اشتراک ویژه فعال است</string>
+    <string name="sub_status_premium_sub">%1$s · %2$s روز تا پایان</string>
+    <string name="sub_status_premium_unknown">اشتراک شما فعال است.</string>
+    <string name="sub_status_ended">اشتراک تمام شده است</string>
+    <string name="sub_status_ended_sub">پایان: %1$s · قانون‌های ویژه غیرفعال‌اند</string>
+    <string name="sub_status_free">نسخه‌ی رایگان</string>
+    <string name="sub_status_free_sub">با اشتراک، همه‌ی امکانات ویژه باز می‌شود.</string>
+    <string name="sub_details">جزئیات اشتراک</string>
+    <string name="sub_details_note">تاریخ پایان و مبلغ از روی طرح و زمان خرید محاسبه شده‌اند؛ مبلغ نهایی را در برنامه‌ی کافه‌بازار ببینید.</string>
+    <string name="sub_d_plan">طرح</string>
+    <string name="sub_d_duration">مدت بسته</string>
+    <string name="sub_d_bought">چه چیزی خریده‌اید</string>
+    <string name="sub_d_bought_value">%1$s (همه‌ی امکانات ویژه)</string>
+    <string name="sub_d_purchase_date">تاریخ خرید</string>
+    <string name="sub_d_expiry">تاریخ انقضا</string>
+    <string name="sub_d_ended_on">تاریخ پایان</string>
+    <string name="sub_d_left">زمان باقی‌مانده</string>
+    <string name="countdown_days">%1$s روز و %2$s</string>
+    <string name="plan_pill_active_timer">%1$s · %2$s مانده</string>
+    <string name="sub_status_premium_timer">%1$s · %2$s مانده</string>
+    <string name="prem_expired_now">اشتراک شما تمام شد؛ امکانات ویژه قفل شد.</string>
+    <string name="sub_days">%1$s روز</string>
+    <string name="sub_d_paid">مبلغ پرداختی</string>
+    <string name="sub_d_order">شماره‌ی سفارش</string>
+    <string name="sub_plans">خرید اشتراک</string>
+    <string name="sub_plans_renew">تمدید اشتراک</string>
+    <string name="sub_buy_plan">%1$s · %2$s</string>
+    <string name="sub_buy_plan_saving">%1$s · %2$s (%3$s٪ ارزان‌تر)</string>
+    <string name="sub_restore">قبلاً خریده‌ام؛ بازیابی از کافه‌بازار</string>
+    <string name="sub_restoring">در حال بررسی کافه‌بازار…</string>
+    <string name="sub_restore_ok">اشتراک شما بازیابی شد.</string>
+    <string name="sub_restore_none">اشتراک فعالی در حساب کافه‌بازار شما پیدا نشد.</string>
+    <string name="sub_restore_error">اتصال به کافه‌بازار برقرار نشد.</string>
+    <string name="sub_history">تاریخچه</string>
+    <string name="sub_history_empty">هنوز خریدی ثبت نشده است.</string>
+    <string name="sub_h_purchase">خرید %1$s</string>
+    <string name="sub_h_renew">تمدید %1$s</string>
+    <string name="sub_h_ended">پایان %1$s</string>
+
+    <!-- گزارش: جستجو و صفحه‌بندی -->
+    <string name="log_search_hint">جستجو در فرستنده و وضعیت</string>
+    <string name="log_f_all">همه</string>
+    <string name="log_f_ok">موفق</string>
+    <string name="log_f_fail">ناموفق</string>
+    <string name="log_t_all">هر زمان</string>
+    <string name="log_t_today">امروز</string>
+    <string name="log_t_7">۷ روز اخیر</string>
+    <string name="log_t_30">۳۰ روز اخیر</string>
+    <string name="log_sort_newest">جدیدترین</string>
+    <string name="log_sort_oldest">قدیمی‌ترین</string>
+    <string name="log_summary">%1$s مورد</string>
+    <string name="log_summary_filtered">%1$s مورد از %2$s</string>
+    <string name="log_page">صفحه‌ی %1$s از %2$s</string>
+    <string name="log_prev">قبلی</string>
+    <string name="log_next">بعدی</string>
+    <string name="log_empty_filtered">موردی با این جستجو و فیلتر پیدا نشد.</string>
+
+    <!-- تنظیمات: اعلان‌ها -->
+    <string name="section_notifs">اعلان‌ها</string>
+    <string name="set_reminders_t">یادآوری اشتراک</string>
+    <string name="set_reminders_d">چند روز مانده به پایان اشتراک و بعد از پایان</string>
+    <string name="set_promo_t">تازه‌ها و پیشنهادها</string>
+    <string name="set_promo_d">هر چند روز یک‌بار، امکانات تازه‌ی برنامه</string>
+
+    <!-- اعلان‌ها -->
+    <string name="ch_promo">تازه‌ها و پیشنهادها</string>
+    <string name="notif_soon_today">امروز</string>
+    <string name="notif_soon_days">%1$s روز دیگر</string>
+    <string name="notif_soon_title">اشتراک شما %1$s تمام می‌شود</string>
+    <string name="notif_soon_text">برای اینکه قانون‌های ویژه‌تان خاموش نشود، %1$s را تمدید کنید.</string>
+    <string name="notif_soon_big">%1$s شما در تاریخ %2$s تمام می‌شود. بعد از آن قانون‌هایی که از امکانات ویژه استفاده می‌کنند غیرفعال می‌شوند. تمدید کنید تا همه‌چیز بی‌وقفه کار کند.</string>
+    <string name="notif_action_renew">تمدید</string>
+    <string name="notif_action_buy">خرید اشتراک</string>
+    <string name="notif_ended_title">اشتراک شما تمام شد</string>
+    <string name="notif_ended_text">قانون‌های ویژه‌تان متوقف شدند. با خرید اشتراک دوباره فعال می‌شوند.</string>
+    <string name="notif_ended_big">اشتراک شما تمام شد و قانون‌هایی که از امکانات ویژه استفاده می‌کردند غیرفعال شدند؛ قانون‌های ساده همچنان کار می‌کنند. با خرید اشتراک، همه‌چیز خودکار برمی‌گردد.</string>
+    <string name="notif_locked_line">%1$s قانون منتظر فعال‌شدن دوباره است.</string>
+    <string name="notif_rep0_title">قانون‌هایتان منتظرند</string>
+    <string name="notif_rep0_text">اشتراک را تهیه کنید تا انتقال پیامک‌ها دوباره کامل کار کند.</string>
+    <string name="notif_rep1_title">دلتنگ امکانات ویژه نشدید؟</string>
+    <string name="notif_rep1_text">چند قانون، دو سیم و گزارش ارسال‌ها با یک اشتراک برمی‌گردد.</string>
+    <string name="notif_rep2_title">پیامک مهمی را از دست ندهید</string>
+    <string name="notif_rep2_text">با اشتراک، قانون‌های ویژه‌ی شما دوباره پیامک‌ها را منتقل می‌کنند.</string>
+    <string name="notif_rep3_title">یک قدم تا فعال‌شدن دوباره</string>
+    <string name="notif_rep3_text">%1$s؛ خرید از کافه‌بازار.</string>
+    <string name="promo_update_title">نسخه‌ی %1$s آمد؛ ببینید چه چیزهایی اضافه شده</string>
+    <string name="promo_update_text">برنامه را بروزرسانی کنید تا امکانات تازه را داشته باشید.</string>
+    <string name="promo_update_big">بروزرسانی کنید و این‌ها اضافه می‌شود:\n%1$s</string>
+    <string name="promo_update_empty">• بهبودهای تازه و رفع اشکال</string>
+    <string name="promo_update_action">بروزرسانی</string>
+    <string name="promo_tip_title">امکان ویژه: %1$s</string>
+    <string name="promo_tip_price">%1$s</string>
+    <string name="promo_tip_action">دیدن امکانات</string>
+
+    <!-- درباره‌ی برنامه -->
+    <string name="about_title">درباره‌ی برنامه</string>
+    <string name="about_version">نسخه‌ی %1$s</string>
+    <string name="about_what_title">این برنامه چه می‌کند؟</string>
+    <string name="about_what">«انتقال پیامک» پیامک‌های دریافتی گوشی شما را، طبق قانون‌هایی که خودتان می‌سازید، خودکار به شماره‌ی دلخواه می‌فرستد؛ مثلاً کد تأیید یا پیامک بانک را به گوشی دوم یا یکی از اعضای خانواده برسانید.\n\nبرنامه رایگان است و بدون ثبت‌نام کار می‌کند. امکانات پیشرفته‌تر با اشتراک باز می‌شود.</string>
+    <string name="about_compare_title">رایگان یا ویژه؟</string>
+    <string name="about_compare_sub">مقایسه‌ی امکانات دو نسخه</string>
+    <string name="about_col_free">رایگان</string>
+    <string name="about_col_premium">ویژه</string>
+    <string name="about_cmp_rules_t">تعداد قانون</string>
+    <string name="about_cmp_rules_free">۱ قانون</string>
+    <string name="about_cmp_rules_prem">نامحدود</string>
+    <string name="about_cmp_simrecv_t">سیم دریافت</string>
+    <string name="about_cmp_simrecv_free">فقط سیم ۱</string>
+    <string name="about_cmp_simrecv_prem">سیم ۱، ۲ یا هر دو</string>
+    <string name="about_cmp_senders_t">فرستنده</string>
+    <string name="about_cmp_senders_free">همه</string>
+    <string name="about_cmp_senders_prem">همه یا مشخص</string>
+    <string name="about_cmp_targets_t">مقصد</string>
+    <string name="about_cmp_targets_free">۱ شماره‌ی تایپی</string>
+    <string name="about_cmp_targets_prem">چند مقصد و مخاطبین</string>
+    <string name="about_cmp_template_t">قالب پیام</string>
+    <string name="about_cmp_template_free">پیش‌فرض</string>
+    <string name="about_cmp_template_prem">دلخواه</string>
+    <string name="about_cmp_simsend_t">سیم ارسال</string>
+    <string name="about_cmp_simsend_free">همان سیم دریافت</string>
+    <string name="about_cmp_simsend_prem">انتخاب سیم ۱ یا ۲</string>
+    <string name="about_cmp_name_t">نام قانون</string>
+    <string name="about_cmp_name_free">خودکار</string>
+    <string name="about_cmp_name_prem">دلخواه</string>
+    <string name="about_cmp_toggle_t">روشن/خاموش</string>
+    <string name="about_cmp_toggle_free">همیشه روشن</string>
+    <string name="about_cmp_toggle_prem">هر زمان</string>
+    <string name="about_cmp_edit_t">ویرایش قانون</string>
+    <string name="about_cmp_edit_free">فقط حذف</string>
+    <string name="about_cmp_edit_prem">ویرایش و حذف</string>
+    <string name="about_cmp_log_t">گزارش ارسال‌ها</string>
+    <string name="about_cmp_log_free">ندارد</string>
+    <string name="about_cmp_log_prem">دارد</string>
+    <string name="about_plans_title">طرح‌های اشتراک</string>
+    <string name="about_plans">%1$s\n\nپرداخت و تمدید از طریق کافه‌بازار است و هر زمان از همان‌جا می‌توانید لغو کنید. اشتراک به حساب کافه‌بازار شما وابسته است و با نصب مجدد برنامه یا گوشی جدید برمی‌گردد.</string>
+    <string name="about_plan_saving">%1$s٪ ارزان‌تر از ماهانه</string>
+    <string name="about_btn_sub">اشتراک من / خرید اشتراک</string>
+    <string name="about_privacy_title">حریم خصوصی</string>
+    <string name="about_privacy">متن پیامک‌ها هیچ‌جا ذخیره نمی‌شود و فقط به شماره‌ای می‌رود که خودتان تعیین کرده‌اید. اینترنت فقط برای بررسی نسخه و اشتراک استفاده می‌شود. فونت: وزیرمتن (مجوز OFL).</string>
+    <string name="lic_cancelled">خرید لغو شد.</string>
+    <string name="lic_sub_error_key">کلید پرداخت (BAZAAR_RSA_KEY) در این نسخه تنظیم نشده است.</string>
+</resources>

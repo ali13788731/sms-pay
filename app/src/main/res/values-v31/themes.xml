@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- اندروید ۱۲ به بعد: اسپلش سیستمی هم‌رنگ صفحه‌ی شروع، تا چشمک سفید دیده نشود -->
+    <style name="Theme.SmsForwarder.Splash" parent="Theme.SmsForwarder">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowSplashScreenBackground">@color/splash_bg</item>
+    </style>
+</resources>

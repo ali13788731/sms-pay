@@ -1,0 +1,11 @@
+{
+  "versionCode": 7,
+  "versionName": "3.0.0",
+  "mandatory": false,
+  "downloadUrl": "https://example.com/sms-forwarder-3.0.0.apk",
+  "reason": "برای ادامه‌ی کار، پایداری و امنیت برنامه باید نسخه‌ی جدید را نصب کنید.",
+  "changelog": [
+    "نمونه: افزودن قابلیت جدید ۱",
+    "نمونه: رفع مشکل ۲"
+  ]
+}

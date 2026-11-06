@@ -1,0 +1,12 @@
+# کلیدها و رمزها؛ هرگز در مخزن قرار نگیرند
+keystore.properties
+*.jks
+*.keystore
+local.properties
+
+# ساخت
+build/
+.gradle/
+.idea/
+*.iml
+.DS_Store
